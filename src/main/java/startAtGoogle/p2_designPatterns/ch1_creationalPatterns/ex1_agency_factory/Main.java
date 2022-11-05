@@ -1,4 +1,4 @@
-package startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency;
+package startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency_factory;
 
 import java.util.ArrayList;
 

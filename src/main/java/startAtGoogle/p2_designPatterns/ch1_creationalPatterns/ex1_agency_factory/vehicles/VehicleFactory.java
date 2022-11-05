@@ -1,6 +1,6 @@
-package startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency.vehicles;
+package startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency_factory.vehicles;
 
-import startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency.VehicleType;
+import startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency_factory.VehicleType;
 
 public class VehicleFactory {
     public Vehicle createVehicle(VehicleType type){

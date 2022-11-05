@@ -1,11 +1,11 @@
-package startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex2_builder;
+package startAtGoogle.p2_designPatterns.ch1_creationalPatterns.simpleExamples.builder;
 
-public class BuilderSimpleExample {
+public class Person {
     private final String firstName;
     private String phone;
 
     // Private constructor
-    private BuilderSimpleExample(Builder builder) {
+    private Person(Builder builder) {
         this.firstName = builder.firstName;
         this.phone = builder.phone;
     }
@@ -27,14 +27,14 @@ public class BuilderSimpleExample {
             return this;
         }
 
-        public BuilderSimpleExample build() {
-            return new BuilderSimpleExample(this);
+        public Person build() {
+            return new Person(this);
         }
     }
 
     @Override
     public String toString() {
-        return "BuilderSimpleExample{" +
+        return "Person{" +
                 "firstName='" + firstName + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';

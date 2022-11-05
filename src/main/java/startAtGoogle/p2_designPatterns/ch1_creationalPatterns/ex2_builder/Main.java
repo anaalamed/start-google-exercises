@@ -1,4 +1,5 @@
 package startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex2_builder;
+
 import java.time.LocalDate;
 
 public class Main {
@@ -10,11 +11,5 @@ public class Main {
                 .yearsOfExp(1)
                 .build();
         System.out.println(developer);
-
-
-        BuilderSimpleExample example = new BuilderSimpleExample.Builder("aaa")
-                .phone("1234")
-                .build();
-        System.out.println("\n" + example);
     }
 }

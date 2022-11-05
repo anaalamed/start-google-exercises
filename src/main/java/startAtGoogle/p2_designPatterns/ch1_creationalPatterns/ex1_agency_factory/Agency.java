@@ -1,7 +1,7 @@
-package startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency;
+package startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency_factory;
 
-import startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency.vehicles.Vehicle;
-import startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency.vehicles.VehicleFactory;
+import startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency_factory.vehicles.Vehicle;
+import startAtGoogle.p2_designPatterns.ch1_creationalPatterns.ex1_agency_factory.vehicles.VehicleFactory;
 
 import java.util.*;
 
