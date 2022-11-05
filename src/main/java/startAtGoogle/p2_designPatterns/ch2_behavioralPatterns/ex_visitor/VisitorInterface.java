@@ -1,4 +1,4 @@
-package startAtGoogle.p2_designPatterns.ch2_behavioralPatterns;
+package startAtGoogle.p2_designPatterns.ch2_behavioralPatterns.ex_visitor;
 
 public interface VisitorInterface  {
     void visit(User user);

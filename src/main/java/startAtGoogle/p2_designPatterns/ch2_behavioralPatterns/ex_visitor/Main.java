@@ -1,4 +1,4 @@
-package startAtGoogle.p2_designPatterns.ch2_behavioralPatterns;
+package startAtGoogle.p2_designPatterns.ch2_behavioralPatterns.ex_visitor;
 
 import java.util.ArrayList;
 import java.util.List;
