@@ -1,4 +1,4 @@
-package startAtGoogle.p2_designPatterns.ch3_structualPatterns.ex1;
+package startAtGoogle.p2_designPatterns.ch3_structualPatterns.ex1_facade_http;
 
 import com.google.gson.Gson;
 import org.apache.hc.client5.http.classic.methods.*;

@@ -1,12 +1,13 @@
-package startAtGoogle.p2_designPatterns.ch3_structualPatterns.ex2_farm.farm;
+package startAtGoogle.p2_designPatterns.ch3_structualPatterns.ex2_adapter_farm.farm;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-interface Animal {
+public interface Animal {
     public void move();
 
-    public AbstractAnimal mate(AbstractAnimal partner);
+    public Animal mate(Animal partner);
 
+    Gender getGender();
 }
 
 abstract class AbstractAnimal implements Animal {

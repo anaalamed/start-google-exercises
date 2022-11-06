@@ -7,6 +7,6 @@ public class Sparrow implements Bird
     }
 
     public void makeSound() {
-        System.out.println("Chirp Chirp");
+        System.out.println("sparrow - Chirp Chirp");
     }
 }

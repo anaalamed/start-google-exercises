@@ -1,4 +1,4 @@
-package startAtGoogle.p2_designPatterns.ch3_structualPatterns.ex2_farm.farm;
+package startAtGoogle.p2_designPatterns.ch3_structualPatterns.ex2_adapter_farm.farm;
 
 public class Horse extends AbstractAnimal {
     @Override
@@ -14,14 +14,14 @@ public class Horse extends AbstractAnimal {
         super();
     }
 
-    public AbstractAnimal mate(AbstractAnimal partner) {
+    public Animal mate(Animal partner) {
         if (this.gender != partner.getGender()) {
             return new Horse();  // random
         } else return null;
     }
 
     public void move() {
-        System.out.println("horse mooving");
+        System.out.println("move - horse mooving");
     }
 
 }
