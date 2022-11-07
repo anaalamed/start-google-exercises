@@ -13,8 +13,8 @@ public class WoodenHorse implements WoodenStructure {
     }
 
     @Override
-    public WoodenHorse replicate(Animal partner) {
-        if(!(partner instanceof WoodenStructureAdapter))
+    public WoodenStructure replicate(Animal partner) {
+        if(!(partner instanceof WoodenStructureToAnimalAdapter))
             throw new IllegalArgumentException("can't replicate with not WoodenStructureAdapter...");
 
         System.out.println("wooden horse replicate..");

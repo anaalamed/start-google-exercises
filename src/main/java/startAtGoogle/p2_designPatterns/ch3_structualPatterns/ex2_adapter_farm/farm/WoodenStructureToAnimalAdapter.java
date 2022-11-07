@@ -1,10 +1,10 @@
 package startAtGoogle.p2_designPatterns.ch3_structualPatterns.ex2_adapter_farm.farm;
 
-public class WoodenStructureAdapter implements Animal {
+public class WoodenStructureToAnimalAdapter implements Animal {
     // WoodenHorse act as an Animal
     WoodenStructure woodenStructure;
 
-    public WoodenStructureAdapter(WoodenStructure woodenStructure) {
+    public WoodenStructureToAnimalAdapter(WoodenStructure woodenStructure) {
         this.woodenStructure = woodenStructure;
     }
 
@@ -18,9 +18,9 @@ public class WoodenStructureAdapter implements Animal {
     public Animal mate(Animal partner) {
         try {
             System.out.println("adapter mate");
-            WoodenHorse woodenHorse =  woodenStructure.replicate(partner);
+            WoodenStructure woodenHorse =  woodenStructure.replicate(partner);
 
-            return new WoodenStructureAdapter(woodenHorse);
+            return new WoodenStructureToAnimalAdapter(woodenHorse);
         } catch (IllegalArgumentException ex) {
             System.out.println("mate ex -> " + ex.getMessage());
             return null;

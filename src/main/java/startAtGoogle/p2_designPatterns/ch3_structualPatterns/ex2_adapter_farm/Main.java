@@ -20,14 +20,14 @@ public class Main {
 
         // wooden horse adapter
         System.out.println("\nWoodenStructureAdapter:");
-        Animal woodenHorseAdapter1 = new WoodenStructureAdapter(woodenHorse1);
+        Animal woodenHorseAdapter1 = new WoodenStructureToAnimalAdapter(woodenHorse1);
         woodenHorseAdapter1.move();
 
 
         // --------------------------- replicate -------------------------
         System.out.println("\n-----------------Replicate-----------------");
         WoodenStructure woodenHorse2 = new WoodenHorse("shoko");
-        Animal woodenHorseAdapter2 = new WoodenStructureAdapter(woodenHorse2);
+        Animal woodenHorseAdapter2 = new WoodenStructureToAnimalAdapter(woodenHorse2);
 
         // woodenAdapter + woodenAdapter
         System.out.println("WoodenAdapter + WoodenAdapter:");
