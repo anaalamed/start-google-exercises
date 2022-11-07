@@ -13,6 +13,9 @@ import org.apache.hc.core5.http.io.entity.StringEntity;
 import java.io.IOException;
 
 public class FacadeHttp {
+    // need to add the util function with common code.
+    // request extends base class HttpUriRequestBase or BasicClassicHttpRequest
+    // response.getEntity() - check null
     static CloseableHttpClient client = HttpClients.createDefault();
 
 
@@ -40,7 +43,7 @@ public class FacadeHttp {
         httpPost.setHeader("Content-type", "application/json");
 
         try ( CloseableHttpResponse response = client.execute(httpPost)) {
-            HttpEntity entity1 = response.getEntity();
+            HttpEntity entity1 = response.getEntity();                                  // check null
             return new Response(response.getCode(), EntityUtils.toString(entity1));
         } catch (IOException | ParseException e) {
             throw new RuntimeException(e);
